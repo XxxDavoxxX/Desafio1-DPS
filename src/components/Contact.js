@@ -10,7 +10,8 @@ function Contact({ contact, onDelete, onToggleFavorite }) {
     // Si el contacto es favorito se agrega la clase "favorite-card"
     // para aplicar estilos diferentes (por ejemplo, resaltarlo)
     <div className={`contact-card ${contact.favorito ? "favorite-card" : ""}`}>
-      
+    
+    {/* Mostramos nombre y apellido */}
       <h3>{contact.nombre} {contact.apellido}</h3>
       <p>{contact.telefono}</p>
 
